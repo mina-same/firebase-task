@@ -1,0 +1,47 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+
+# Vite
+.env
+
+# macOS
+.DS_Store
+
+# React Native / Mobile
+android/
+ios/
+.expo/
+.expo-shared/
+build/
+*.keystore
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Coverage
+coverage/
+
+# Generated
+*.tmp
+*.temp
+
+# Metro cache
+.expo-cache/
+
+# Optional: keep lockfiles if you use them
+# package-lock.json
+# yarn.lock
