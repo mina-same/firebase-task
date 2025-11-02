@@ -42,10 +42,3 @@ coverage/
 # Optional: keep lockfiles if you use them
 # package-lock.json
 # yarn.lock
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-mobile/.env
-dashbaord/.env
