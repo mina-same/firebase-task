@@ -1,0 +1,32 @@
+/* Sidebar Module Styles */
+
+/* Smooth scrolling for sidebar */
+.sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-400) var(--color-gray-100);
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-500);
+}
+
+/* Enhanced focus styles for accessibility */
+.sidebar a:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-lg);
+}
+

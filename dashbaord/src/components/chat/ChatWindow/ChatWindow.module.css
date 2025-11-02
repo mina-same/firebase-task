@@ -1,0 +1,66 @@
+/* ChatWindow Module Styles */
+
+.chat-window {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Messages Container */
+.messages-container {
+  scroll-behavior: smooth;
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}
+
+/* Message Group Animation */
+.message-group {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scroll animation */
+@supports (scroll-behavior: smooth) {
+  .messages-container {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Loading state animation */
+.chat-window .loading-container {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Header shadow on scroll */
+.chat-window header {
+  transition: box-shadow 0.2s ease;
+}
+
+.chat-window header.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}

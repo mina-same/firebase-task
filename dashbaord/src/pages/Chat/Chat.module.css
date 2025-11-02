@@ -1,0 +1,81 @@
+/* Chat Page Styles */
+
+/* Mobile responsive improvements */
+@media (max-width: 767px) {
+  /* Ensure full width on mobile */
+  .chat-container {
+    width: 100%;
+  }
+  
+  /* Prevent horizontal scroll */
+  .chat-interface {
+    overflow-x: hidden;
+  }
+}
+
+/* Smooth transitions for conversations list */
+.conversations-list {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Backdrop animation */
+.conversations-backdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Chat interface container enhancement */
+.chat-interface-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(249, 250, 251, 1), rgba(255, 255, 255, 1));
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chat-interface-container {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Enhanced shadow for chat container */
+.chat-interface-container {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Better border radius on mobile */
+@media (max-width: 767px) {
+  .chat-interface-container {
+    border-radius: 0.75rem;
+  }
+}
+
+/* Conversations list animations */
+.conversations-list {
+  backdrop-filter: blur(10px);
+}
+
+/* Smooth scrollbar styling */
+.chat-interface-container ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.chat-interface-container ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-interface-container ::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 3px;
+}
+
+.chat-interface-container ::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}

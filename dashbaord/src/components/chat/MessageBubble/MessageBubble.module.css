@@ -1,0 +1,61 @@
+/* MessageBubble Module Styles */
+
+.message-bubble {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-content {
+  position: relative;
+}
+
+/* Hover effect for received messages */
+.message-content:hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Message text selection */
+.message-content p {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+/* Smooth transitions */
+.message-bubble {
+  transition: margin 0.2s ease;
+}
+
+/* Enhanced shadow on hover */
+.message-content {
+  transition: box-shadow 0.2s ease;
+}
+
+/* Read status indicators - Modern double checkmark style */
+.message-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: -4px;
+}
+
+/* Read status - Blue checkmarks for read messages */
+.message-status-indicator.read svg {
+  color: #60A5FA; /* Blue-400 */
+  opacity: 1;
+}
+
+/* Sent status - Gray checkmarks for sent messages */
+.message-status-indicator.sent svg {
+  color: rgba(156, 163, 175, 0.7); /* Gray-400 */
+  opacity: 0.7;
+}
